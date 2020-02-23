@@ -3,7 +3,7 @@ import React from 'react';
 import Stone from './Stone';
 import './Stone.css';
 
-import Station from './Station';
+import Game from './Game';
 
 function App() {
   return (
@@ -12,23 +12,12 @@ function App() {
       <Stone color="purple"></Stone>
       <Stone color="orange"></Stone>
       <Stone color="green"></Stone>
-      <Station></Station>
+      <Game></Game>
     </div>
   );
 }
 
-const colors = {
-  GREEN: 'green',
-  ORANGE: 'orange',
-  PURPLE: 'purple',
-  RED: 'red'
-};
+const colors = ['green', 'orange', 'purple', 'red'];
+const actions = ['create', 'destroy', 'move_in', 'move_out'];
 
-const actions = {
-  CREATE: 'create',
-  DESTROY: 'destroy',
-  MOVE_IN: 'move_in',
-  MOVE_OUT: 'move_out'
-}
-
-export default App;
+export {App, colors, actions};
