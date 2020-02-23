@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Stone from './Stone';
+import './Stone.css';
+
+import Station from './Station';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Stone color="red"></Stone>
+      <Stone color="purple"></Stone>
+      <Stone color="orange"></Stone>
+      <Stone color="green"></Stone>
+      <Station></Station>
     </div>
   );
+}
+
+const colors = {
+  GREEN: 'green',
+  ORANGE: 'orange',
+  PURPLE: 'purple',
+  RED: 'red'
+};
+
+const actions = {
+  CREATE: 'create',
+  DESTROY: 'destroy',
+  MOVE_IN: 'move_in',
+  MOVE_OUT: 'move_out'
 }
 
 export default App;

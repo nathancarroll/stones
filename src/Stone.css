@@ -1,0 +1,66 @@
+.stone, .action {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: #000 0px 3px 4px;
+    margin: 5px;
+}
+
+.red {
+    background: red;
+    border: 5px solid red;
+    color: red;
+}
+
+.green {
+    background: green;
+    border: 5px solid green;
+    color: green;
+}
+
+.purple {
+    background: purple;
+    border: 5px solid purple;
+    color: purple;
+}
+
+.orange {
+    background: orange;
+    border: 5px solid orange;
+    color: orange;
+}
+
+.action {
+    background: transparent;
+    box-shadow: none;
+    position: relative;
+}
+
+.action::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+    font-weight: bold;
+}
+
+.destroy::after {
+    content: 'X';
+}
+
+.create::after {
+    content: '+';
+}
+
+.move_out::after {
+    content: '>';
+}
+
+.move_in::after {
+    content: '>';
+}
+
+
+
