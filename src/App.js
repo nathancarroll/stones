@@ -8,11 +8,7 @@ import Game from './Game';
 function App() {
   return (
     <div className="App">
-      <Stone color="red"></Stone>
-      <Stone color="purple"></Stone>
-      <Stone color="orange"></Stone>
-      <Stone color="green"></Stone>
-      <Game></Game>
+      <Game stations={8} stonesPer={5} rulesPer={3}></Game>
     </div>
   );
 }

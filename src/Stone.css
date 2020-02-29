@@ -31,6 +31,18 @@
     color: orange;
 }
 
+.action.active {
+    background: grey;
+}
+
+.action.valid {
+    background: aqua;
+}
+
+.rule.active {
+    background: black;
+}
+
 .action {
     background: transparent;
     box-shadow: none;
@@ -59,7 +71,7 @@
 }
 
 .move_in::after {
-    content: '>';
+    content: '<';
 }
 
 
